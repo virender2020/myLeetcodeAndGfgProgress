@@ -6,7 +6,7 @@ public:
     for(int i=0;i<A.size();i++){
         frequency[A[i]]++;
     }
-    for(int i=0;i<=A.size();i++){
+    for(int i=0;i<A.size();i++){
          if(frequency[i]==0)
         a=i;
     }
