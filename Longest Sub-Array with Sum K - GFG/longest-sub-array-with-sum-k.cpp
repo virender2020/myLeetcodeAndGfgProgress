@@ -19,12 +19,12 @@ class Solution{
                 maxLen=max(maxLen,i+1);
             }
             int rem=sum-K;
-             if(mpp.find(rem)!=mpp.end())
+             if(mpp.find(rem)!=mpp.end())  // to find the sum-k in the map
              {
                 int len=i-mpp[rem];
                 maxLen=max(maxLen,len);
             }
-            if(mpp.find(sum)==mpp.end())
+            if(mpp.find(sum)==mpp.end()) //if already exists
                 mpp[sum]=i;
             
         }
