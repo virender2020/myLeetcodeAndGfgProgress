@@ -9,6 +9,7 @@
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
+        //empty or single node
         if(head==NULL||head->next==NULL)
             return false;
         ListNode* fast=head;
